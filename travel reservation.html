@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Reservation Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: lightgreen;
+      }
+      form {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 500px;
+      }
+      h4 {
+        text-align: center;
+      }
+      h3 {
+        color: blue;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      button[type="submit"] {
+        background-color: lightblue;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: center;
+      }
+      button[type="submit"]:hover {
+        background-color: lightblue;
+      }
+      .terms {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h4>Travel Reservation Form</h4>
+      <h3>*denotes mandatory</h3>
+      <label for="full-name">Full Name*:</label>
+      <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address*:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <label for="tour-package">Tour Package*:</label>
+      <select id="tour-package" name="tour-package" required>
+        <option value="">--Select tour package--</option>
+        <option value="Goa">Goa</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Mysore">Mysore</option>
+        <option value="Maldives">Maldives</option>
+      </select>
+
+      <label for="arrival-date">Arrival Date*</label>
+      <input type="date" id="arrival-date" name="arrival-date" required>
+
+      <label for="number-of-persons">Number of Persons*:</label>
+      <input type="number" id="number-of-persons" name="number-of-persons" required>
+
+      <label>What do you want to avail?*</label>
+      
+      <label for="boarding">Boarding <input type="checkbox" id="boarding" name="boarding" value="boarding"></label>
+
+      <label for="fooding">Fooding  <input type="checkbox" id="fooding" name="fooding" value="fooding"> </label>    
+      <label for="sight-seeing">Sight Seeing <input type="checkbox" id="sight-seeing" name="sight-seeing" value="sight-seeing"></label>
+
+      <label for="discount-coupon">Discount Coupon Code</label>
+      <input type="text" id="discount-coupon" name="discount-coupon" placeholder="UNKNOWN_TYPE">
+
+      <label class="terms">
+        <p>Terms And Conditions*</p> 
+</label>    
+<label>
+  <input type="radio" name="agree" value="yes" required>
+  Agree
+  <input type="radio" name="agree" value="no" required>
+ I Disagree
+</label>
+      <a href="#"> <button type="submit">Complete Reservation</button> </a>
+    </form>
+  </body>
+</html>
